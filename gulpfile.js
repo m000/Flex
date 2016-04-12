@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('less', function () {
     return gulp.src('./static/stylesheet/style.less')
         .pipe(less())
-        .pipe(minify())
+        //.pipe(minify())
         .pipe(rename({
             extname: '.min.css'
         }))
