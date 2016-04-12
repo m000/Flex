@@ -47,7 +47,7 @@
     {% include "partial/gtm.html" %}
   {% endif %}
   <aside>
-    <div>
+    <div id="sitetitle">
       <a href="{{ SITEURL }}">
         {% if SITELOGO %}
         <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
@@ -57,6 +57,8 @@
       </a>
       <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
       <p>{{ SITESUBTITLE }}</p>
+    </div>
+    <div>
       <nav>
         <ul class="list">
           {% for page in pages|sort(attribute='title') %}
